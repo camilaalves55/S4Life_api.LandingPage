@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slider li');
     const primeiroBotao = document.querySelector('.primeiroBotao');
     const segundoBotao = document.querySelector('.segundoBotao');
-    const button = document.getElementById('handleSubmit');
+    
     let currentSlide = 0;
 
     function showSlide(index) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     segundoBotao.addEventListener('click', prevSlide);
 });
 
-
+let button = document.getElementById("handleSubmit");
 
 button.onclick = async function(e) {
     e.preventDefault();
@@ -41,7 +41,7 @@ button.onclick = async function(e) {
     let email = document.getElementById("email").value;
     let data        = {nome,email}
 
-    const response = await fetch('http://localhost:3000/api/store/s4life', {
+    const response = await fetch('http://localhost:3000/api/store/notificacao_ofertas', {
         method: "POST",
         headers: {"Content-type": "application/json;charset=UTF-8"},
         body: JSON.stringify(data)
