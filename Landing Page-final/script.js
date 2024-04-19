@@ -25,10 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide);
     }
 
-    // Mostra o primeiro slide ao carregar a página
     showSlide(currentSlide);
 
-    // Adiciona eventos de clique aos botões de navegação
     primeiroBotao.addEventListener('click', nextSlide);
     segundoBotao.addEventListener('click', prevSlide);
 });
