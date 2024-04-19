@@ -316,6 +316,7 @@ h3 {
     background-color: var(--laranja);
     padding: 15px 8px;
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.2);
